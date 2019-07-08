@@ -15,21 +15,24 @@ HumanityGovernance: 0x761006cf8891307aD6e484F33a1f3fe3fD4bE648
 
 # Going forward
 
-Query Humanity, whether by simulating (like Hamza said) or deploy on testnet (like Snake said, Humanity GitHub assez it yesterday, just for us)
+Query Humanity, whether by simulating (like Hamza said) or deploy on testnet (like Snake said, Humanity GitHub added it yesterday, just for us)
 
 # ERC20 token [TRUE]
-1,000,000,000 UNITS
-Give 10,000 TRUE to anyone asking, for free, who is HUMAN on Humanity
+- Pre-mined 1,000,000,000 UNITS
+- Give 10,000 TRUE to anyone asking, for free, who is registered on Humanity DAO.
+
 # TCR smart contract
-Stake 1,000 TRUE to upload a news article (URL)
-Vote ongoing for 2 days, anyone can stake TRUE tokens to say if ACCURATE or MISLEADING
-if yes, keep and give 1,000 TRUE back
-if no, lose 1,000 TRUE
+- Stake 1,000 TRUE to upload a news article (URL)
+- Vote ongoing for 2 days, anyone can stake TRUE tokens to say if ACCURATE or MISLEADING 
+  - if yes, keep and give 1,000 TRUE back
+  - if no, lose 1,000 TRUE
+- Allow revoting on an article with staking x% higher coins than the previous stake. 
+
 # Front-end
-Ask for HumanityDAO identity by querying (does it require a digital signature?)
-Page “giving you 10,000 TRUE”
-Box to input URL + 1,000 TRUE transaction call
-List page: pull HTML title of news URL + thumbnail preview (like social network do)
+- Ask for HumanityDAO identity by querying (does it require a digital signature?)
+- Page “giving you 10,000 TRUE”
+- Box to input URL + 1,000 TRUE transaction call
+- List page: pull HTML title of news URL + thumbnail preview (like social network do)
 
 # Ressources
 https://github.com/marbleprotocol/humanity
