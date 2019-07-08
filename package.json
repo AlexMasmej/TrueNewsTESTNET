@@ -45,6 +45,7 @@
     "lodash": "^4.17.11",
     "openzeppelin-solidity": "git://github.com/marbleprotocol/openzeppelin-solidity.git#d1858de",
     "rlp": "^2.2.2",
+    "truffle-contract": "^4.0.23",
     "web3": "^1.0.0-beta.36",
     "web3-eth-abi": "^1.0.0-beta.54",
     "web3-utils": "^1.0.0-beta.54"

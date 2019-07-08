@@ -21,10 +21,9 @@ config();
 
 (async () => {
   try {
-    const rpcUrl = 'http://localhost:8545';
-    // const rpcUrl = 'https://mainnet.infura.io/';
+    const rpcUrl = 'https://ropsten.infura.io/v3/48a9df578f3f4c4e812bb8760401318a';
 
-    const deployer = '0x5409ed021d9299bf6814279a6a1411a7e866a631'.toLowerCase();
+    const deployer = '0x5d8c77d2123ACD0490Bf779eac2be02d5B0D322C'.toLowerCase();
 
     const provider = new Web3ProviderEngine();
     const privateKey = process.env.PRIVATE_KEY as string;
