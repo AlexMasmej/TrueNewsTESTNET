@@ -1,58 +1,36 @@
-[![CircleCI](https://circleci.com/gh/marbleprotocol/polaris/tree/master.svg?style=svg)](https://circleci.com/gh/marbleprotocol/humanity/tree/master)
+# True News TCR
+_Part of Gitcoin/Consensys Beyond BlockchainHackaton_
 
-# Humanity
+True News is a token-curated registry (TCR) that lets its participants curate news it found interesting. Anyone can challenge what one considers as *misleading / fake news*.
+To provide skin-in-the-game reputation, we require that participants belong on HumanityDAO protocol.
 
-Humanity is a Decentralized Autonomous Organization (DAO) that governs a registry of unique humans on Ethereum.
-
-## Deployed Addresses (Ethereum Mainnet)
-
-```
-Humanity (ERC20): 0xbbd1706d16418bb136e1497a73d3af4164586da0
-HumanityGovernance: 0xdd806c4fdad2949a97fda79036cfbb8750181b37
-HumanityRegistry: 0x4ee46dc4962c2c2f6bcd4c098a0e2b28f66a5e90
-Faucet: 0x2fe5e394a312acf9d18e8836f04ba92af29ad6d4
-TwitterHumanityApplicant: 0x9d661f7773be14439b4223f5b516bc7ef67b0369
-UniversalBasicIncome: 0x762d141b8d9600bde64138762e6fb38efc56dcba
-```
-
-## Deploy
-
-* In `deploy.ts`, set the `rpcUrl` of the network and the Ethereum address of the deployer.
-* In `.env` add the `PRIVATE_KEY` of the deployer.
+## Deployed Addresses (Ethereum Ropsten Testnet)
 
 ```
-yarn deploy
+Humanity (ERC20): 0xd3a2439865ef39709fd4502ea447f734ab40675d
+HumanityRegistry: 0x547c2025CE087211eB74d1101e15070E3a4Ddb89
+TwitterHumanityApplicant: 0xAb04D4Dde09fC8Ec7726223e8178D816940cB21B
+HumanityGovernance: 0x761006cf8891307aD6e484F33a1f3fe3fD4bE648
 ```
 
-## Query the Registry
+# Going forward
 
-Create Sybil-resistant smart contract protocols by restricting permission to Ethereum addresses that are on the registry.
+Query Humanity, whether by simulating (like Hamza said) or deploy on testnet (like Snake said, Humanity GitHub assez it yesterday, just for us)
 
-**HumanityRegistry.sol**
-```
-function isHuman(address who) public view returns (bool)
-```
+# ERC20 token [TRUE]
+1,000,000,000 UNITS
+Give 10,000 TRUE to anyone asking, for free, who is HUMAN on Humanity
+# TCR smart contract
+Stake 1,000 TRUE to upload a news article (URL)
+Vote ongoing for 2 days, anyone can stake TRUE tokens to say if ACCURATE or MISLEADING
+if yes, keep and give 1,000 TRUE back
+if no, lose 1,000 TRUE
+# Front-end
+Ask for HumanityDAO identity by querying (does it require a digital signature?)
+Page “giving you 10,000 TRUE”
+Box to input URL + 1,000 TRUE transaction call
+List page: pull HTML title of news URL + thumbnail preview (like social network do)
 
-See **UniversalBasicIncome.sol** for an example.
-
-## Apply to the Registry
-
-First, submit social verification in the form of a Twitter post with your Ethereum address. Then, apply to the registry with your Twitter username and a refundable proposal fee.
-
-**TwitterHumanityApplicant.sol**
-```
-function applyWithTwitter(string memory username) public returns (uint)
-```
-
-## Vote on Applicants
-
-Vote on applicants to the registry using Humanity tokens.
-
-**Governance.sol**
-```
-function voteYes(uint proposalId) public
-```
-
-```
-function voteNo(uint proposalId) public
-```
+# Ressources
+https://github.com/marbleprotocol/humanity
+https://github.com/skmgoldin/tcr
